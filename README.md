@@ -85,24 +85,31 @@ This will:
 
 ## Manual Startup (Alternative to start.bat)
 
-If you prefer to start services individually:
+If `start.bat` is not working or you prefer to start services individually, follow these steps:
 
-**1. Start Neo4j:**
+### 1. Start the Database (Neo4j)
+Ensure Docker Desktop is running, then start the Neo4j container:
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
+*Note: Wait about 15-30 seconds for the database to fully initialize before starting the backend.*
 
-**2. Start Backend API:**
+### 2. Start the Backend API
+Open a new terminal, navigate to the backend directory, and start the FastAPI server:
 ```bash
 cd backend
+# Optional: Activate your virtual environment first
+# .venv\Scripts\activate (Windows)
 python -m uvicorn main:app --host 0.0.0.0 --port 8001 --reload
 ```
 
-**3. Start Frontend:**
+### 3. Start the Frontend
+Open another terminal, navigate to the frontend directory, and start the React dev server:
 ```bash
 cd frontend
 npm start
 ```
+The app will be available at [http://localhost:3000](http://localhost:3000).
 
 ---
 

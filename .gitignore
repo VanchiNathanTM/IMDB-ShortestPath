@@ -1,0 +1,47 @@
+# Environment
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+ENV/
+
+# Node
+frontend/node_modules/
+frontend/build/
+
+# Data directories (generated/large files)
+data/raw/
+data/processed/
+data/import/
+
+# Neo4j (managed by Docker volumes)
+neo4j/
+
+# Logs & artifacts
+*.log
+*.err
+*.out
+.sisyphus/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-*

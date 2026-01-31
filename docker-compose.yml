@@ -17,7 +17,6 @@ services:
       - neo4j_data:/data
       - neo4j_logs:/logs
       - ./data/import:/import
-    # Avoid restart loops during local dev; start.bat controls lifecycle.
     restart: "no"
 
 volumes:

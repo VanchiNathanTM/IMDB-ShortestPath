@@ -4,23 +4,6 @@ A "Six Degrees of Separation" application for movies and people, built with Neo4
 
 Find the shortest path between any two people or movies in the IMDB database!
 
-## Quick Start (Windows)
-
-**Already have the database imported?** Just run:
-```cmd
-start.bat
-```
-
-This will start Neo4j, the backend API, and the frontend dev server.  
-Then open **http://localhost:3000** in your browser.
-
-To stop all services:
-```cmd
-stop.bat
-```
-
----
-
 ## Prerequisites
 
 - **Docker Desktop** (Required) - [Download Here](https://www.docker.com/products/docker-desktop/)
@@ -83,9 +66,9 @@ This will:
 
 ---
 
-## Manual Startup (Alternative to start.bat)
+## Startup
 
-If `start.bat` is not working or you prefer to start services individually, follow these steps:
+To start the application, follow these steps:
 
 ### 1. Start the Database (Neo4j)
 Ensure Docker Desktop is running, then start the Neo4j container:
